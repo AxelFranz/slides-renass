@@ -19,7 +19,7 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>Demo Presentation</h1>
+				<h1>BCSF-Renass Website</h1>
 			</section>
 
 			<section>
@@ -30,10 +30,56 @@
 				</ul>
 			</section>
 			<section>
-				<p>This will remain visible for all vertical slides</p>
-				<section>Here is some vertical content</section>
-				<section>and some more</section>
-				<section>more stuff...</section>
+				<p>HTMX</p>
+				<section><img src="/images/htmx-logo.png" alt="HTMX Logo : High power tools for HTML"></section>
+				<section>
+					<div>AJAX-Powered Hypermedia Library</div>
+					<div>But what does that mean ?</div>
+					<ul>
+						<li class="fragment">Everything can make HTTP Requests</li>
+						<li class="fragment">Responses are HTML not JSON</li>
+						<li class="fragment">Responses replace HTML elements</li>
+					</ul>
+				</section>
+				<section>
+					<div>Why is it good ?</div>
+					<ul>
+						<li class="fragment">Less JS</li>
+						<li class="fragment">Faster to write</li>
+						<li class="fragment">Fewer chances of bugs</li>
+						<li class="fragment">Faster to render</li>
+					</ul>
+				</section>
+				<section>
+					Small example
+					<!-- I had to escape everything for the lining to work -->
+					<pre><code data-line-numbers>&lt;!-- /api/loremipsum => <h1>Hello World</h1> --&gt;
+						&lt;button
+  						hx-get="/api/loremipsum"
+  						hx-target="#toFill"
+  						hx-on="click"&gt;
+  						Fill div !
+						&lt;/button&gt;
+
+						&lt;div id="toFill"&gt;&lt;/div&gt;
+					</code></pre>
+
+				</section>
+				<section>
+					<pre><code data-line-numbers>&lt;!-- /api/loremipsum => <h1>Hello World</h1> --&gt;
+						&lt;button
+  						hx-get="/api/loremipsum"
+  						hx-target="#toFill"
+  						hx-on="click"&gt;
+  						Fill div !
+						&lt;/button&gt;
+
+						&lt;div id="toFill"&gt;
+							<h1>Hello World</h1>
+						&lt;/div&gt;
+					</code></pre>
+				</section>
+
 			</section>
 			<section>
 				<h2>Linked image</h2>
