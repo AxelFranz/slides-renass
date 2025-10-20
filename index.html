@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>Slides Renass</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -31,7 +31,7 @@
 			</section>
 			<section>
 				<p>HTMX</p>
-				<section><img src="/images/htmx-logo.png" alt="HTMX Logo : High power tools for HTML"></section>
+				<section><img src="images/htmx-logo.png" alt="HTMX Logo : High power tools for HTML"></section>
 				<section>
 					<div>AJAX-Powered Hypermedia Library</div>
 					<div>But what does that mean ?</div>
@@ -82,12 +82,34 @@
 
 			</section>
 			<section>
+				<h2>Templ</h2>
+				<section>
+					<img src="images/logotempl.svg" alt="Templ Logo">
+				</section>
+				<section>
+					<div>Statically typed Go HTML-Templating Library</div>
+				</section>
+				<section>
+					<pre><code data-line-numbers>templ body() {
+	&lt;body&gt;
+		@Header()
+		&lt;main&gt;
+			&lt;div 
+				hx-get="/api/fetchDataCountries" 
+				hx-trigger="load" 
+				hx-target="main"
+			&gt;&lt;/div&gt;
+		&lt;/main&gt;
+	&lt;/body&gt;
+}
+					</code></pre>
+				</section>
+			</section>
+			<section>
 				<h2>Lorem Ipsum</h2>
 				<img src="https://placekittens.com/801/501" alt="adorable kitten">
 			</section>
-			<section data-background="https://media.giphy.com/media/3oKIPmDhXaieiJE3Sg/giphy.gif">
-				<h2>Lorem Ipsum</h2>
-			</section>
+
 		</div>
 	</div>
 
